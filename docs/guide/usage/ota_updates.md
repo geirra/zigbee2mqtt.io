@@ -6,6 +6,12 @@
 
 This feature allows to update your Zigbee devices over-the-air.
 
+::: tip TIP
+Always check if the firmware update will bring you advantages. Firmware updates are NOT made for Zigbee2MQTT, but for working with apps and hubs from the brand.
+In some cases the firmware update can cause that your device will react different then Zigbee2MQTT expects, making that you can't use it the way you want, at least untill Zigbee2MQTT is changed to react to those changes.
+If you get annoyed by the notifications that there are updates available, then turn the automatic check off.
+:::
+
 Not all manufacturers make their updates available, below is a (not-complete) list of manufacturer/devices that support it:
 - IKEA TRÅDFRI devices
 - Ubisys devices
@@ -17,7 +23,7 @@ Not all manufacturers make their updates available, below is a (not-complete) li
 Gira does unfortunately not seem to offer firmware updates for their wall transmitter 2430-100 (which is very similar to the Jung ZLLxx5004M) and the update file for the Jung wall transmitter does not work for Gira (probably because the Gira wall transmitter only has 6 buttons instead of 8 on the Jung).
 - Sengled devices
 
-To check wether your specific device supports OTA updates via Zigbee2MQTT, go to the supported devices page, click on your device and look for the *OTA updates* section.
+To check whether your specific device supports OTA updates via Zigbee2MQTT, go to the supported devices page, click on your device and look for the *OTA updates* section.
 
 ## Automatic checking for available updates
 Your zigbee devices can request a firmware update check. Zigbee2MQTT obliges this, and will automatically check if updates are available for your devices.
@@ -102,5 +108,5 @@ Normally Zigbee2MQTT compares current device firmware with available images vers
 Please note, even though Zigbee specification basically allows firmware version downgrade, some of the devices may reject older firmwares. This cannot be forced from Zigbee2MQTT side.
 
 ## Troubleshooting
-- `Device didn't respond to OTA request` or `Update failed with reason: 'aborted by device'`: try restarting the device by disconnecting the power/battery for a few seconds and try again.
+- `Device didn't respond to OTA request` or `Update failed with reason: 'aborted by device'`: try restarting the device by disconnecting the power/battery for a few seconds and try again, make sure to activate the device by pressing a button on it right before sending the update request.
 - For battery powered devices make sure that the battery is 70%+ as OTA updating is very power consuming.

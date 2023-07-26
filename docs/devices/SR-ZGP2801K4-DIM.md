@@ -1,6 +1,6 @@
 ---
 title: "Sunricher SR-ZGP2801K4-DIM control via MQTT"
-description: "Integrate your Sunricher SR-ZGP2801K4-DIM via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Sunricher SR-ZGP2801K4-DIM via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-12-03T18:14:38Z
 pageClass: device-page
 ---
@@ -16,7 +16,7 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | SR-ZGP2801K4-DIM  |
-| Vendor  | Sunricher  |
+| Vendor  | [Sunricher](/supported-devices/#v=Sunricher)  |
 | Description | Pushbutton transmitter module |
 | Exposes | action, linkquality |
 | Picture | ![Sunricher SR-ZGP2801K4-DIM](https://www.zigbee2mqtt.io/images/devices/SR-ZGP2801K4-DIM.jpg) |
@@ -67,6 +67,7 @@ If pairing successfully, please exit learning mode on the switch. If channel 26 
 indication, it might because the switch has not entered learning mode yet since the very start. We have to repeat the step
 2 to put it into learning mode.
 <!-- Notes END: Do not edit below this line -->
+
 
 
 

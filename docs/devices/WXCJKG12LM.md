@@ -1,6 +1,6 @@
 ---
 title: "Xiaomi WXCJKG12LM control via MQTT"
-description: "Integrate your Xiaomi WXCJKG12LM via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Xiaomi WXCJKG12LM via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2019-12-15T17:27:48Z
 pageClass: device-page
 ---
@@ -16,9 +16,9 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | WXCJKG12LM  |
-| Vendor  | Xiaomi  |
+| Vendor  | [Xiaomi](/supported-devices/#v=Xiaomi)  |
 | Description | Aqara Opple switch 2 bands |
-| Exposes | battery, action, operation_mode, linkquality |
+| Exposes | battery, voltage, action, operation_mode, linkquality |
 | Picture | ![Xiaomi WXCJKG12LM](https://www.zigbee2mqtt.io/images/devices/WXCJKG12LM.jpg) |
 
 
@@ -52,22 +52,22 @@ When bound to a lamp, the behavior is as follows (for WXCJKG12LM Aqara Opple swi
 <!-- Notes END: Do not edit below this line -->
 
 
-## Options
-*[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
-
-* `temperature_precision`: Number of digits after decimal point for temperature, takes into effect on next report of device. The value must be a number with a minimum value of `0` and with a with a maximum value of `3`
-
-* `temperature_calibration`: Calibrates the temperature value (absolute offset), takes into effect on next report of device. The value must be a number.
 
 
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported..
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
 The unit of this value is `%`.
+
+### Voltage (numeric)
+Voltage of the battery in millivolts.
+Value can be found in the published state on the `voltage` property.
+It's not possible to read (`/get`) or write (`/set`) this value.
+The unit of this value is `mV`.
 
 ### Action (enum)
 Triggered action (e.g. a button click).

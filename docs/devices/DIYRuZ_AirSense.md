@@ -1,6 +1,6 @@
 ---
 title: "DIYRuZ DIYRuZ_AirSense control via MQTT"
-description: "Integrate your DIYRuZ DIYRuZ_AirSense via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your DIYRuZ DIYRuZ_AirSense via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-12-01T19:02:25Z
 pageClass: device-page
 ---
@@ -16,7 +16,7 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | DIYRuZ_AirSense  |
-| Vendor  | DIYRuZ  |
+| Vendor  | [DIYRuZ](/supported-devices/#v=DIYRuZ)  |
 | Description | [Air quality sensor](https://modkam.ru/?p=1715) |
 | Exposes | co2, temperature, humidity, pressure, led_feedback, enable_abc, threshold1, threshold2, temperature_offset, humidity_offset, pressure_offset, linkquality |
 | Picture | ![DIYRuZ DIYRuZ_AirSense](https://www.zigbee2mqtt.io/images/devices/DIYRuZ_AirSense.jpg) |
@@ -26,6 +26,7 @@ pageClass: device-page
 
 
 <!-- Notes END: Do not edit below this line -->
+
 
 
 ## Options

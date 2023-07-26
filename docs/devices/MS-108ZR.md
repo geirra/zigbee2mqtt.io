@@ -1,6 +1,6 @@
 ---
 title: "Moes MS-108ZR control via MQTT"
-description: "Integrate your Moes MS-108ZR via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Moes MS-108ZR via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2021-10-01T17:18:02Z
 pageClass: device-page
 ---
@@ -16,7 +16,7 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | MS-108ZR  |
-| Vendor  | Moes  |
+| Vendor  | [Moes](/supported-devices/#v=Moes)  |
 | Description | Zigbee + RF curtain switch module |
 | Exposes | cover (state, position), calibration_time, moving, motor_reversal, linkquality |
 | Picture | ![Moes MS-108ZR](https://www.zigbee2mqtt.io/images/devices/MS-108ZR.jpg) |
@@ -26,6 +26,10 @@ pageClass: device-page
 
 
 <!-- Notes END: Do not edit below this line -->
+
+
+## OTA updates
+This device supports OTA updates, for more information see [OTA updates](../guide/usage/ota_updates.md).
 
 
 ## Options
